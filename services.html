@@ -84,7 +84,22 @@ font-weight: 600;
 grid-template-columns: 1fr;
 }
 }
+.page-hero {
+background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(‘services-banner.jpg’);
+background-size: cover;
+background-position: center;
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+}
 
+.page-hero h1 {
+font-size: 42px;
+margin: 0;
+}
 </style>
 </head>
 <body>
@@ -97,11 +112,11 @@ grid-template-columns: 1fr;
 <a href="services.html">Services</a>
 </nav>
 </header>
+<section class="page-hero">
+<h1>Our Services</h1>
+</section>
 <section class="section">
-<div class="container">
-<h1 style="text-align:center; margin-bottom:60px; font-size:40px;">
-Our Services
-</h1>  
+<div class="container">  
 <div class="service-detail">
 <img src="residential.jpg" alt="Residential Cleaning">
 <div>
