@@ -19,12 +19,14 @@ padding: 20px 40px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
-header h1 {
-margin: 0;
-font-size: 24px;
-font-weight: 700;
+.logo {
+height: 50px;
+width: auto;
 }
 
 nav a {
@@ -107,7 +109,7 @@ margin-top: 10px;
 </head>
 <body>
 <header>
-<h1>Palemo Cleaning</h1>
+<img src="palemo-logo.png" alt="Palemo Cleaning Logo" class="logo">
 <nav>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
