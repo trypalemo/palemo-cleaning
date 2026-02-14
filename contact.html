@@ -59,49 +59,47 @@ max-width: 1000px;
 margin: 0 auto;
 }
 
-.contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  margin-top: 80px;
+
+.contact-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: start;
 }
 
-.contact-info h3 {
-  margin-bottom: 20px;
+.contact-info h2 {
+margin-bottom: 20px;
 }
 
 .contact-info p {
-  margin-bottom: 15px;
+margin-bottom: 15px;
+line-height: 1.6;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
+width: 100%;
+padding: 14px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
+font-family: ‘Montserrat’, sans-serif;
 }
 
 .contact-form textarea {
-  min-height: 150px;
-  resize: vertical;
+height: 150px;
+resize: none;
 }
 
-.contact-form button {
-  background-color: #544541;
-  color: white;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
+.contact-form .button {
+border: none;
+cursor: pointer;
 }
-  
-.contact-info {
-text-align: center;
-line-height: 1.8;
+
+@media (max-width: 768px) {
+.contact-grid {
+grid-template-columns: 1fr;
+}
 }
 
 .button {
@@ -224,42 +222,38 @@ opacity: 1;
 <h1>Contact Us</h1>
 </section>
 
-<section class="section">
-<div class="container contact-info">
-<h2>Get In Touch</h2>
-<p>Abuja, Nigeria</p>
-<p>+234 903 140 3380</p>
-<p>info.palemo@gmail.com</p>
+ <section class="section" style="background-color:#f7f7f7;">
+  <div class="container contact-grid">
+<div class="contact-info">
+  <h2>Contact Information</h2>
 
-<a class="button" href="https://wa.me/2347074067851">Chat on WhatsApp</a>
+  <p><strong>Location:</strong> Abuja, Nigeria</p>
+  <p><strong>Email:</strong> trypalemo@gmail.com</p>
+  <p><strong>Phone:</strong> +234 707 406 7851</p>
+
+  <a href="https://wa.me/2347074067851" class="button">
+    Message on WhatsApp
+  </a>
 </div>
+
+<div class="contact-form">
+  <input type="text" placeholder="Full Name">
+  <input type="email" placeholder="Email Address">
+  <textarea placeholder="Tell us about your space..."></textarea>
+  <button class="button">Send Message</button>
+</div>
+      </div>
 </section>
 
- <section class="section">
-  <div class="container contact-wrapper">
-
-    <div class="contact-info">
-      <h3>Contact Information</h3>
-      <p><strong>Location:</strong> Abuja, Nigeria</p>
-      <p><strong>Email:</strong> trypalemo@gmail.com</p>
-      <p><strong>Phone:</strong> +234 707 406 7851</p>
-
-      <a href="https://wa.me/2347074067851" class="primary-btn">
-        Message on WhatsApp
-      </a>
-    </div>
-
-    <div class="contact-form">
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Tell us about your space..." required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
+  <section class="cta-section">
+  <div class="container">
+    <h2>Ready to experience structured cleaning?</h2>
+    <a href="https://wa.me/2347074067851" class="primary-btn">
+      Book on WhatsApp
+    </a>
   </div>
-</section> 
+</section>
+
   
 <footer class="site-footer">
   <div class="container">
