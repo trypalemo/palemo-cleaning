@@ -105,15 +105,32 @@ grid-template-columns: 1fr;
 }
 
 .button {
-display: inline-block;
-background: #25D366;
-color: white;
-padding: 14px 28px;
-border-radius: 6px;
-text-decoration: none;
-margin-top: 20px;
+  display: inline-block;
+  background: #544541;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
+  .whatsapp-btn {
+  background: #25D366;
+}
+
+  .cta-section {
+  background-color: #f3ede0;
+  color: #544541;
+  padding: 100px 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+  
 footer {
 background-color: #544541;
 color: white;
@@ -233,7 +250,7 @@ opacity: 1;
   <p><strong>Email:</strong> trypalemo@gmail.com</p>
   <p><strong>Phone:</strong> +234 707 406 7851</p>
 
-  <a href="https://wa.me/2347074067851" class="button">
+  <a href="https://wa.me/2347074067851" class="button whatsapp-btn">
   Book on WhatsApp
 </a>
 
@@ -251,7 +268,7 @@ opacity: 1;
   <option>Move-In / Move-Out</option>
 </select>
 <input type="date">
-<textarea placeholder="Tell us about your space. Size, number of rooms, current condition." required></textarea>
+<textarea placeholder="Describe your space. Number of rooms, bathrooms, current condition, and preferred date." required></textarea>
 
   <button class="button">Send Message</button>
 </div>
@@ -261,9 +278,9 @@ opacity: 1;
   <section class="cta-section">
   <div class="container">
     <h2>Ready to experience structured cleaning?</h2>
-    <a href="https://wa.me/2347074067851" class="primary-btn">
-      Book on WhatsApp
-    </a>
+    <a href="https://wa.me/2347074067851" class="button">
+  Book on WhatsApp
+</a>
   </div>
 </section>
 
