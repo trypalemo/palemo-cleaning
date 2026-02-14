@@ -259,6 +259,7 @@ color: #544541;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .site-footer h4 {
@@ -290,19 +291,20 @@ color: #544541;
 .social-links {
   margin-top: 20px;
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
 }
 
-.social-links a {
-  color: #f3ede0;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
+.social-links img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.8;
+  transition: 0.3s ease;
 }
 
-.social-links a:hover {
-  text-decoration: underline;
+.social-links img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
 }
   
 @media (max-width: 600px) {
@@ -468,13 +470,17 @@ For homes, offices, and managed properties in Abuja.
   <p>+234 707 406 7851</p>
 
   <div class="social-links">
-    <a href="https://www.instagram.com/trypalemo" target="_blank">Instagram</a>
-    <a href="https://www.x.com/trypalemo" target="_blank">X</a>
-    <a href="https://www.linkedin.com/company/trypalemo" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/trypalemo" target="_blank">
+      <img src="instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.x.com/trypalemo" target="_blank">
+      <img src="x-icon.png" alt="X">
+    </a>
+    <a href="https://www.linkedin.com/company/trypalemo" target="_blank">
+      <img src="linkedin-icon.png" alt="LinkedIn">
+    </a>
   </div>
 </div>
-
-  </div>
 
   <div class="footer-bottom">
     © 2026 Palemo Cleaning Services. All rights reserved.
