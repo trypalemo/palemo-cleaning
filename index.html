@@ -247,6 +247,64 @@ opacity: 0.9;
 background-color: #ffffff;
 color: #544541;
 }
+
+.site-footer {
+  background-color: #544541;
+  color: white;
+  padding: 80px 20px 40px 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.site-footer h4 {
+  margin-bottom: 20px;
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+  color: #e5e5e5;
+}
+
+.site-footer a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #f3ede0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+  
 @media (max-width: 600px) {
 header {
 flex-direction: column;
@@ -384,8 +442,41 @@ For homes, offices, and managed properties in Abuja.
   </div>
 </section>
 
-<footer>
-<p>© 2026 Palemo Cleaning Services. Abuja.</p>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    
+    <div>
+      <h4>Palemo</h4>
+      <p>
+        Structured professional cleaning services in Abuja.
+        Discipline. Precision. Consistency.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="services.html">Services</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+  <h4>Contact</h4>
+  <p>Abuja, Nigeria</p>
+  <p>trypalemo@gmail.com</p>
+  <p>+234 707 406 7851</p>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/trypalemo" target="_blank">Instagram</a>
+    <a href="https://www.x.com/trypalemo" target="_blank">X</a>
+    <a href="https://www.linkedin.com/company/trypalemo" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Palemo Cleaning Services. All rights reserved.
+  </div>
 </footer>
-</body>
-</html>
