@@ -76,6 +76,7 @@ margin-bottom: 15px;
 line-height: 1.6;
 }
 
+.contact-form select,
 .contact-form input,
 .contact-form textarea {
 width: 100%;
@@ -83,12 +84,12 @@ padding: 14px;
 margin-bottom: 20px;
 border: 1px solid #ddd;
 border-radius: 8px;
-font-family: ‘Montserrat’, sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form textarea {
 height: 150px;
-resize: none;
+resize: vertical;
 }
 
 .contact-form .button {
@@ -96,6 +97,7 @@ border: none;
 cursor: pointer;
 }
 
+  
 @media (max-width: 768px) {
 .contact-grid {
 grid-template-columns: 1fr;
@@ -232,14 +234,25 @@ opacity: 1;
   <p><strong>Phone:</strong> +234 707 406 7851</p>
 
   <a href="https://wa.me/2347074067851" class="button">
-    Message on WhatsApp
-  </a>
+  Book on WhatsApp
+</a>
+
 </div>
 
 <div class="contact-form">
-  <input type="text" placeholder="Full Name">
-  <input type="email" placeholder="Email Address">
-  <textarea placeholder="Tell us about your space..."></textarea>
+  <input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number" required>
+<select required>
+  <option value="">Select Service Type</option>
+  <option>Residential Cleaning</option>
+  <option>Deep Cleaning</option>
+  <option>Office Cleaning</option>
+  <option>Move-In / Move-Out</option>
+</select>
+<input type="date">
+<textarea placeholder="Tell us about your space. Size, number of rooms, current condition." required></textarea>
+
   <button class="button">Send Message</button>
 </div>
       </div>
