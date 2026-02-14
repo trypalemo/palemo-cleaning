@@ -37,12 +37,16 @@ color: #333;
 }
   
 .section {
-  padding: 100px 20px;
+padding: 70px 20px;
 }
-
+  
  .section h2 {
   margin-bottom: 25px;
 } 
+
+  .alt-section {
+background-color: #f3ede0;
+}
   
 .container {
 max-width: 1100px;
@@ -224,6 +228,18 @@ font-weight: 600;
   padding: 20px;
   border-radius: 16px;
 }
+
+.about-split {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.about-image img {
+width: 100%;
+border-radius: 14px;
+}
   
 </style>
 </head>
@@ -265,31 +281,29 @@ font-weight: 600;
   </div>
 </section>
 
- <section class="section">
-  <div class="container about-different">
+ <section class="section alt-section">
+  <div class="container about-split">
+<div class="about-text">
+  <h2>What Makes Us Different</h2>
+  <ul class="about-list">
+    <li>Structured cleaning checklists for every visit</li>
+    <li>Clear quality control standards</li>
+    <li>Reliable scheduling and communication</li>
+    <li>Consistent results across homes and offices</li>
+  </ul>
+</div>
 
-    <div class="different-text">
-      <h2>What Makes Us Different</h2>
-
-      <ul class="about-list">
-        <li>Structured cleaning checklists for every visit</li>
-        <li>Clear quality control standards</li>
-        <li>Reliable scheduling and communication</li>
-        <li>Consistent results across homes and offices</li>
-      </ul>
-    </div>
-
-    <div class="different-image">
-      <img src="checklist.png" alt="Structured cleaning checklist">
-    </div>
-
-  </div>
+<div class="about-image">
+  <img src="checklist.png" alt="Cleaning checklist">
+</div>
+      </div>
 </section>
+
   
-<section class="section">
-<div class="container">
-<div class="center-text">
-<h2>Our Core Values</h2>
+<section class="section" style="background-color:#f8f8f8;">
+  <div class="container">
+    <div class="center-text">
+      <h2>Our Core Values</h2>
 <p>These principles guide how we serve every client.</p>
 </div>
 <div class="values">
