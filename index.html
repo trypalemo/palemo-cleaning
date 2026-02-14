@@ -146,9 +146,9 @@ font-weight: 700;
 .service-box {
 background-color: #ffffff;
 padding: 40px 25px;
-border-radius: 10px;
+border-radius: 14px;
 text-align: center;
-box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 transition: transform 0.3s ease;
 }
 
@@ -172,36 +172,48 @@ margin-top: 40px;
   text-align: center;
 }
   .why-section {
-  padding: 100px 20px;
+padding: 100px 20px;
+background-color: #ffffff;
+text-align: center;
 }
 
-.why-section h4 {
-  margin-bottom: 15px;
+.why-section h2 {
+margin-bottom: 60px;
 }
 
-.why-section p {
-  max-width: 320px;
-  margin: 0 auto;
+.why-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 50px;
+}
+
+.why-item h4 {
+margin-bottom: 15px;
+}
+
+.why-item p {
+max-width: 300px;
+margin: 0 auto;
 }
 
 .cta-section {
-  background-color: #544541;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
+background-color: #544541;
+color: white;
+padding: 100px 20px;
+text-align: center;
 }
 
 .cta-section h2 {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .cta-section p {
-  margin-bottom: 35px;
+margin-bottom: 30px;
 }
 
 .cta-section .primary-btn {
-  background-color: #f3ede0;
-  color: #544541;
+background-color: #ffffff;
+color: #544541;
 }
 @media (max-width: 600px) {
 header {
@@ -302,40 +314,39 @@ For homes, offices, and managed properties in Abuja.
 </div>
 </div>
 </section>
-<section class="section">
+<section class="why-section">
   <div class="container">
-    <h2 style="text-align:center; margin-bottom:50px;">
-      Why Choose Palemo
-    </h2>
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:40px; text-align:center;">
+    <h2>Why Choose Palemo</h2>
+<div class="why-grid">
   
-  <div>
+  <div class="why-item">
     <h4>Trained Team</h4>
     <p>Structured cleaning methods and quality control standards.</p>
   </div>
 
-  <div>
+  <div class="why-item">
     <h4>Reliable Scheduling</h4>
     <p>We show up on time and complete work as agreed.</p>
   </div>
 
-  <div>
+  <div class="why-item">
     <h4>Consistent Results</h4>
     <p>Your space feels the same every time. Clean. Organized. Maintained.</p>
   </div>
 
 </div>
-    </div>
+      </div>
 </section>
 
+
 <section class="cta-section">
-  <h2>Ready to Experience Structured Cleaning?</h2>
-  <p>
-    Book your cleaning session today.
-  </p>
-  <a href="https://wa.me/2347074067851" class="primary-btn">
-    Book on WhatsApp
-  </a>
+  <div class="container">
+    <h2>Ready to Experience Structured Cleaning?</h2>
+    <p>Book your cleaning session today.</p>
+    <a href="https://wa.me/2347074067851" class="primary-btn">
+      Book on WhatsApp
+    </a>
+  </div>
 </section>
 
 <footer>
