@@ -195,7 +195,36 @@ font-weight: 600;
 .logo {
   height: 60px;
 }
- 
+
+ .about-different {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.different-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 900px) {
+  .about-different {
+    grid-template-columns: 1fr;
+  }
+
+  .different-image {
+    order: -1;
+  }
+}
+
+  .different-image {
+  background: #f3ede0;
+  padding: 20px;
+  border-radius: 16px;
+}
+  
 </style>
 </head>
 <body>
@@ -237,17 +266,25 @@ font-weight: 600;
 </section>
 
  <section class="section">
-  <div class="container">
-    <h2>What Makes Us Different</h2>
+  <div class="container about-different">
 
-    <ul class="about-list">
-      <li>Structured cleaning checklists for every visit</li>
-      <li>Clear quality control standards</li>
-      <li>Reliable scheduling and communication</li>
-      <li>Consistent results across homes and offices</li>
-    </ul>
+    <div class="different-text">
+      <h2>What Makes Us Different</h2>
+
+      <ul class="about-list">
+        <li>Structured cleaning checklists for every visit</li>
+        <li>Clear quality control standards</li>
+        <li>Reliable scheduling and communication</li>
+        <li>Consistent results across homes and offices</li>
+      </ul>
+    </div>
+
+    <div class="different-image">
+      <img src="checklist.png" alt="Structured cleaning checklist">
+    </div>
+
   </div>
-</section> 
+</section>
   
 <section class="section">
 <div class="container center-text">
