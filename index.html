@@ -281,11 +281,12 @@ color: #544541;
 }
 
 .footer-bottom {
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.15);
-  padding-top: 20px;
-  font-size: 14px;
-  color: #ccc;
+text-align: center;
+border-top: 1px solid rgba(255,255,255,0.15);
+margin-top: 50px;
+padding-top: 20px;
+font-size: 14px;
+color: #ccc;
 }
 
 .social-links {
@@ -305,6 +306,23 @@ color: #544541;
 .social-links img:hover {
   opacity: 1;
   transform: translateY(-2px);
+}
+
+.social-icons {
+display: flex;
+gap: 15px;
+margin-top: 15px;
+}
+
+.social-icons img {
+width: 22px;
+height: 22px;
+opacity: 0.85;
+transition: 0.3s;
+}
+
+.social-icons img:hover {
+opacity: 1;
 }
   
 @media (max-width: 600px) {
@@ -445,44 +463,48 @@ For homes, offices, and managed properties in Abuja.
 </section>
 
 <footer class="site-footer">
-  <div class="container footer-grid">
-    
-    <div>
-      <h4>Palemo</h4>
-      <p>
-        Structured professional cleaning services in Abuja.
-        Discipline. Precision. Consistency.
-      </p>
-    </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <p><a href="index.html">Home</a></p>
-      <p><a href="services.html">Services</a></p>
-      <p><a href="about.html">About</a></p>
-      <p><a href="contact.html">Contact</a></p>
-    </div>
-
-    <div>
-  <h4>Contact</h4>
-  <p>Abuja, Nigeria</p>
-  <p>trypalemo@gmail.com</p>
-  <p>+234 707 406 7851</p>
-
-  <div class="social-links">
-    <a href="https://www.instagram.com/trypalemo" target="_blank">
-      <img src="instagram.png" alt="Instagram">
-    </a>
-    <a href="https://www.x.com/trypalemo" target="_blank">
-      <img src="x.png" alt="X">
-    </a>
-    <a href="https://www.linkedin.com/company/trypalemo" target="_blank">
-      <img src="linkedin.png" alt="LinkedIn">
-    </a>
+  <div class="container">
+<div class="footer-grid">
+  
+  <div>
+    <img src="palemo-logo.png" alt="Palemo Logo" style="height:50px; margin-bottom:20px;">
+    <p>
+      Structured professional cleaning services in Abuja.
+      Discipline. Precision. Consistency.
+    </p>
   </div>
+
+  <div>
+    <h4>Quick Links</h4>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="services.html">Services</a></p>
+    <p><a href="about.html">About</a></p>
+    <p><a href="contact.html">Contact</a></p>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>Abuja, Nigeria</p>
+    <p>trypalemo@gmail.com</p>
+    <p>+234 707 406 7851</p>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/trypalemo" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.x.com/trypalemo" target="_blank">
+        <img src="x.png" alt="X">
+      </a>
+      <a href="https://www.linkedin.com/company/trypalemo" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </div>
+
 </div>
 
-  <div class="footer-bottom">
-    © 2026 Palemo Cleaning Services. All rights reserved.
+<div class="footer-bottom">
+  © 2026 Palemo Cleaning Services. All rights reserved.
+</div>
   </div>
 </footer>
