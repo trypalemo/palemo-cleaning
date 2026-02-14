@@ -140,7 +140,7 @@ font-weight: 700;
 }
 
 .service-box {
-background-color: #ffffff;
+background-color: #f8f8f8;
 padding: 45px 30px;
 border-radius: 16px;
 text-align: center;
@@ -150,6 +150,15 @@ transition: transform 0.3s ease;
 
 .service-box:hover {
 transform: translateY(-8px);
+}
+
+.service-box h4 {
+margin-bottom: 15px;
+}
+
+.service-box p {
+line-height: 1.6;
+color: #666;
 }
   
 footer {
@@ -168,6 +177,13 @@ margin-top: 40px;
   padding: 100px 20px;
   text-align: center;
 }
+
+ .intro-section p {
+max-width: 700px;
+margin: 0 auto;
+margin-top: 20px;
+line-height: 1.6;
+} 
   .why-section {
 padding: 110px 20px;
 background-color: #ffffff;
@@ -204,6 +220,12 @@ margin: 0 auto;
   padding: 40px 30px;
   border: 1px solid #eee;
   border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
 .cta-section {
@@ -214,11 +236,11 @@ text-align: center;
 }
 
 .cta-section h2 {
-margin-bottom: 20px;
+font-size: 32px;
 }
 
 .cta-section p {
-margin-bottom: 30px;
+opacity: 0.9;
 }
 
 .cta-section .primary-btn {
