@@ -36,26 +36,50 @@ font-weight: 600;
 .logo {
 height: 60px;
 }
-.hero {
+.home-hero {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 80px 40px;
 background-color: #f3ede0;
-text-align: center;
-padding: 90px 20px;
+gap: 40px;
 }
 
-.hero-content {
-max-width: 600px;
+.hero-text
+{
+flex: 1;
 }
 
-.hero h2 {
-font-size: 44px;
-margin-bottom: 20px;
-font-weight: 700;
-line-height: 1.1;
-}
-
-.hero p {
-font-size: 18px;
+.hero-text h1
+{
+font-size: 72px;
+line-height: 1.05;
 margin-bottom: 30px;
+font-weight: 700;
+}
+
+.hero-text p
+{
+font-size: 18px;
+margin-bottom: 35px;
+max-width: 500px;
+}
+
+.hero-buttons
+{
+display: flex;
+gap: 20px;
+}
+
+.hero-image
+{
+flex: 1;
+}
+
+.hero-image img
+{
+width: 100%;
+border-radius: 12px;
 }
 
 .button {
@@ -140,10 +164,36 @@ margin-top: 10px;
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<section class="hero">
-<h2>Professional cleaning for homes and offices</h2>
-<p>Reliable cleaning services in Abuja. We keep your space fresh and spotless.</p>
-<a class="button" href="https://wa.me/2347074067851">Book via WhatsApp</a>
+<section class="home-hero">
+  <div class="container hero-wrapper">
+    
+    <div class="hero-text">
+      <h1>
+        Calm.<br>
+        Order.<br>
+        Clean.
+      </h1>
+
+      <p>
+        Professional cleaning services in Abuja that bring structure,
+        discipline, and spotless results to your home or office.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://wa.me/2347074067851" class="primary-btn">
+          Book on WhatsApp
+        </a>
+        <a href="services.html" class="secondary-btn">
+          Explore Services
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="hero.jpg" alt="Clean modern living room">
+    </div>
+
+  </div>
 </section>
 <section class="section" id="services" style="background-color:#f8f8f8;">
 <div class="container">
