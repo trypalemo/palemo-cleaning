@@ -233,6 +233,10 @@ cursor: pointer;
     z-index: 1300;
   }
 
+nav.active ~ .menu-toggle {
+  display: none;
+}
+ 
   nav {
     position: fixed;
     top: 0;
@@ -446,6 +450,7 @@ object-fit: cover;
 function toggleMenu() {
   document.querySelector("nav").classList.toggle("active");
   document.querySelector(".overlay").classList.toggle("active");
+  document.querySelector(".menu-toggle").classList.toggle("active");
   document.body.classList.toggle("no-scroll");
 }
 </script>
