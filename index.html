@@ -331,18 +331,27 @@ opacity: 1;
 
   header {
     padding: 15px 20px;
+    position: relative;
   }
 
   .menu-toggle {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
   }
 
   nav {
     display: none;
     flex-direction: column;
-    width: 100%;
-    margin-top: 15px;
-    gap: 15px;
+    background: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    gap: 20px;
   }
 
   nav.active {
@@ -366,6 +375,36 @@ opacity: 1;
 
   .hero-image {
     margin-top: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section {
+    padding: 70px 20px;
+  }
+
+  .services,
+  .why-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cta-section {
+    padding: 70px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 24px;
   }
 
 }
