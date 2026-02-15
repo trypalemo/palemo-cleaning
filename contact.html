@@ -385,8 +385,12 @@ padding: 0 20px;
     <option>Move-In / Move-Out</option>
   </select>
 
-  <label for="preferred-date">Preferred Cleaning Date</label>
-<input type="date" id="preferred-date" name="preferred_date" required>
+ <input 
+  type="date" 
+  name="preferred_date" 
+  placeholder="Preferred Cleaning Date"
+  onfocus="this.showPicker && this.showPicker()"
+>
 
   <textarea name="details" placeholder="Describe your space. Number of rooms, bathrooms, current condition, and preferred date." required></textarea>
 
