@@ -35,6 +35,20 @@ color: #333;
   padding-left: 20px;
   line-height: 1.8;
 }
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
   
 .section {
 padding: 80px 20px;
@@ -250,6 +264,14 @@ line-height: 1.3;
 }
 
 .values img {
+  height: 250px;
+}
+
+.about-split {
+  grid-template-columns: 1fr;
+}
+
+.about-image img {
   height: 250px;
 }
   
