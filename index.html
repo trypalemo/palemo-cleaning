@@ -340,6 +340,16 @@ opacity: 1;
   .no-scroll {
   overflow: hidden;
 }
+
+.close-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+}
   
 @media (max-width: 768px) {
 
@@ -396,13 +406,8 @@ opacity: 1;
   nav.active a:nth-child(5) { transition-delay: 0.2s; }
 
   .close-menu {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 26px;
-    cursor: pointer;
-  }
-
+  display: block;
+}
   .overlay {
     position: fixed;
     inset: 0;
