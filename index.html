@@ -320,6 +320,12 @@ transition: 0.3s;
 .social-icons img:hover {
 opacity: 1;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
   
 @media (max-width: 768px) {
 
@@ -327,9 +333,20 @@ opacity: 1;
     padding: 15px 20px;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
   nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
     gap: 15px;
-    font-size: 14px;
+  }
+
+  nav.active {
+    display: flex;
   }
 
   .home-hero {
@@ -361,7 +378,11 @@ opacity: 1;
     <img src="palemo-logo.png" class="logo">
   </a>
 
-  <nav>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="mobileNav">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
@@ -527,3 +548,11 @@ For homes, offices, and managed properties in Abuja.
 </div>
   </div>
 </footer>
+  <script>
+function toggleMenu() {
+  document.querySelector("nav").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
