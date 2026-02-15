@@ -326,12 +326,23 @@ opacity: 1;
   font-size: 28px;
   cursor: pointer;
 }
+
+  .overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
   
 @media (max-width: 768px) {
 
   header {
     padding: 15px 20px;
     position: relative;
+    z-index: 1000;
   }
 
   .menu-toggle {
@@ -341,21 +352,31 @@ opacity: 1;
   }
 
   nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 75%;
+    max-width: 320px;
+    background: #f3ede0;
+    display: flex;
     flex-direction: column;
-    background: #ffffff;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 220px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 40px;
+    gap: 30px;
+    transition: right 0.4s ease;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.08);
+  }
+
+  nav a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #544541;
   }
 
   nav.active {
-    display: flex;
+    right: 0;
   }
 
   .home-hero {
@@ -377,42 +398,13 @@ opacity: 1;
     margin-top: 30px;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .primary-btn,
-  .secondary-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .section {
-    padding: 70px 20px;
-  }
-
-  .services,
-  .why-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .cta-section {
-    padding: 70px 20px;
-  }
-
-  .cta-section h2 {
-    font-size: 24px;
-  }
-
 }
   
 </style>
 </head>
 <body>
 <header>
+  <div class="overlay" onclick="toggleMenu()"></div>
   <a href="index.html">
     <img src="palemo-logo.png" class="logo">
   </a>
@@ -587,9 +579,12 @@ For homes, offices, and managed properties in Abuja.
 </div>
   </div>
 </footer>
-  <script>
+ <div class="overlay" onclick="toggleMenu()"></div>
+
+<script>
 function toggleMenu() {
   document.querySelector("nav").classList.toggle("active");
+  document.querySelector(".overlay").classList.toggle("active");
 }
 </script>
 
