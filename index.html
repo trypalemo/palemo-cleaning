@@ -341,42 +341,55 @@ opacity: 1;
 
   header {
     padding: 15px 20px;
-    position: relative;
-    z-index: 1000;
   }
 
   .menu-toggle {
     display: block;
-    font-size: 28px;
+    font-size: 26px;
     cursor: pointer;
+    z-index: 1100;
   }
 
   nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -50%;
+    width: 50%;
     height: 100vh;
-    width: 75%;
-    max-width: 320px;
     background: #f3ede0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    padding: 60px 40px;
+    justify-content: flex-start;
+    padding: 100px 30px 30px 30px;
     gap: 30px;
-    transition: right 0.4s ease;
-    box-shadow: -10px 0 30px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.08);
+    z-index: 1000;
   }
 
   nav a {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    color: #544541;
   }
 
   nav.active {
     right: 0;
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 900;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
 
   .home-hero {
