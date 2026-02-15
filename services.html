@@ -211,6 +211,15 @@ letter-spacing: -0.5px;
 .no-scroll {
   overflow: hidden;
 }
+
+.close-menu {
+display: none;
+position: absolute;
+top: 25px;
+right: 25px;
+font-size: 26px;
+cursor: pointer;
+}
  
 @media (max-width: 768px) {
 
@@ -270,12 +279,10 @@ letter-spacing: -0.5px;
   nav.active a:nth-child(5) { transition-delay: 0.2s; }
 
   .close-menu {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 26px;
-    cursor: pointer;
-  }
+display: block;
+}
+
+}
   .page-hero {
     padding: 80px 20px;
   }
