@@ -97,6 +97,12 @@ line-height: 1.6;
   resize: vertical;
 }
 
+  .contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
 .contact-form select {
   padding-right: 40px;
 
@@ -379,7 +385,8 @@ padding: 0 20px;
     <option>Move-In / Move-Out</option>
   </select>
 
-  <input type="date" name="preferred_date">
+  <label for="preferred-date">Preferred Cleaning Date</label>
+<input type="date" id="preferred-date" name="preferred_date" required>
 
   <textarea name="details" placeholder="Describe your space. Number of rooms, bathrooms, current condition, and preferred date." required></textarea>
 
