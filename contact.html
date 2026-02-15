@@ -231,125 +231,106 @@ transition: 0.3s;
 opacity: 1;
 }
 
-  @media (max-width: 768px) {
+.menu-toggle {
+display: none;
+font-size: 28px;
+cursor: pointer;
+}
 
-  header {
-    padding: 15px 20px;
-  }
+.close-menu {
+display: none;
+position: absolute;
+top: 25px;
+right: 25px;
+font-size: 26px;
+cursor: pointer;
+}
 
-  .menu-toggle {
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 1300;
-  }
+.overlay {
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.1);
+backdrop-filter: blur(6px);
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s ease;
+z-index: 1100;
+}
 
-  nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 38%;
-    max-width: 320px;
-    background: #f3ede0;
-    box-shadow: -10px 0 40px rgba(0,0,0,0.08);
-    padding: 100px 30px 40px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 35px;
-    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 1200;
-  }
+.overlay.active {
+opacity: 1;
+pointer-events: all;
+}
 
-  nav.active {
-    right: 0;
-  }
+.no-scroll {
+overflow: hidden;
+}
 
-  nav a {
-    font-size: 22px;
-    font-weight: 600;
-    opacity: 0;
-    transform: translateX(20px);
-    transition: all 0.4s ease;
-    padding-bottom: 14px;
-    border-bottom: 1px solid rgba(84,69,65,0.08);
-    width: 100%;
-  }
+.contact-section {
+padding: 100px 0;
+}
 
-  nav a:last-child {
-    border-bottom: none;
-  }
+.container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 20px;
+}
 
-  nav.active a {
-    opacity: 1;
-    transform: translateX(0);
-  }
+@media (max-width: 768px) {
 
-  nav.active a:nth-child(2) { transition-delay: 0.05s; }
-  nav.active a:nth-child(3) { transition-delay: 0.1s; }
-  nav.active a:nth-child(4) { transition-delay: 0.15s; }
-  nav.active a:nth-child(5) { transition-delay: 0.2s; }
+header {
+padding: 15px 20px;
+}
 
-  .close-menu {
-    display: block;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 26px;
-    cursor: pointer;
-  }
+.menu-toggle {
+display: block;
+z-index: 1300;
+}
 
-  .overlay {
-    position: fixed;
-    inset: 0;
-    backdrop-filter: blur(6px);
-    background: rgba(0,0,0,0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 1100;
-  }
+nav {
+position: fixed;
+top: 0;
+right: -100%;
+height: 100vh;
+width: 38%;
+max-width: 320px;
+background: #f3ede0;
+box-shadow: -10px 0 40px rgba(0,0,0,0.08);
+padding: 100px 30px 40px 30px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 35px;
+transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+z-index: 1200;
+}
 
-  .overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
+nav.active {
+right: 0;
+}
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+nav a {
+font-size: 22px;
+font-weight: 600;
+width: 100%;
+}
 
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form select {
-    width: 100%;
-  }
+.close-menu {
+display: block;
+}
 
-  .page-hero {
-    padding: 80px 20px;
-  }
+/* Contact page mobile spacing */
+.contact-section {
+padding: 70px 20px;
+}
 
-  .page-hero h1 {
-    font-size: 32px;
-    line-height: 1.3;
-  }
-
-  .cta-section {
-    padding: 70px 20px;
-  }
-
-  .cta-section h2 {
-    font-size: 24px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
+.contact-info,
+.contact-form {
+width: 100%;
+}
 
 }
+
   
 </style>
 </head>
@@ -358,21 +339,17 @@ opacity: 1;
 
 <header>
   <div class="overlay" onclick="toggleMenu()"></div>
-
   <a href="index.html">
     <img src="palemo-logo.png" class="logo">
   </a>
-
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
   <nav id="mobileNav">
     <div class="close-menu" onclick="toggleMenu()">×</div>
-
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+      </nav>
 </header>
 
 <section class="page-hero">
@@ -479,5 +456,6 @@ function toggleMenu() {
   document.body.classList.toggle("no-scroll");
 }
 </script>
+
 </body>
 </html>
