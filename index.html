@@ -321,13 +321,48 @@ transition: 0.3s;
 opacity: 1;
 }
   
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 header {
-flex-direction: column;
-align-items: flex-start;
+padding: 15px 20px;
 }
+
 nav {
-margin-top: 10px;
+gap: 15px;
+font-size: 14px;
+}
+
+.page-hero {
+padding: 80px 20px;
+}
+
+.page-hero h1 {
+font-size: 32px;
+line-height: 1.3;
+}
+
+.cta-section {
+padding: 70px 20px;
+}
+
+.cta-section h2 {
+font-size: 24px;
+}
+
+.section {
+padding: 70px 20px;
+}
+
+.contact-grid,
+.service-detail,
+.values,
+.services {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.footer-grid {
+grid-template-columns: 1fr;
+gap: 30px;
 }
 }
 </style>
