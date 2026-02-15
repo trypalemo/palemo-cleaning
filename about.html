@@ -223,32 +223,49 @@ font-weight: 600;
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
-@media (max-width: 900px) {
-  .about-different {
-    grid-template-columns: 1fr;
-  }
-
-  .different-image {
-    order: -1;
-  }
+@media (max-width: 768px) {
+header {
+padding: 15px 20px;
 }
 
-  .different-image {
-  background: #f3ede0;
-  padding: 20px;
-  border-radius: 16px;
+nav {
+gap: 15px;
+font-size: 14px;
 }
 
-.about-split {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 60px;
-align-items: center;
+.page-hero {
+padding: 80px 20px;
 }
 
-.about-image img {
-width: 100%;
-border-radius: 14px;
+.page-hero h1 {
+font-size: 32px;
+line-height: 1.3;
+}
+
+.cta-section {
+padding: 70px 20px;
+}
+
+.cta-section h2 {
+font-size: 24px;
+}
+
+.section {
+padding: 70px 20px;
+}
+
+.contact-grid,
+.service-detail,
+.values,
+.services {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.footer-grid {
+grid-template-columns: 1fr;
+gap: 30px;
+}
 }
   
 </style>
