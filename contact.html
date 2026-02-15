@@ -393,7 +393,40 @@ padding: 0 20px;
   onblur="if(!this.value)this.type='text'"
 >
 
-  <textarea name="details" placeholder="Describe your space. Number of rooms, bathrooms, current condition, and preferred date." required></textarea>
+  <select name="property_type" required>
+  <option value="">Select Property Type</option>
+  <option>Apartment</option>
+  <option>Duplex</option>
+  <option>Bungalow</option>
+  <option>Terrace</option>
+  <option>Office Space</option>
+</select>
+
+<select name="bedrooms" required>
+  <option value="">Number of Bedrooms</option>
+  <option>1 Bedroom</option>
+  <option>2 Bedrooms</option>
+  <option>3 Bedrooms</option>
+  <option>4 Bedrooms</option>
+  <option>5+ Bedrooms</option>
+</select>
+
+<select name="bathrooms" required>
+  <option value="">Number of Bathrooms</option>
+  <option>1 Bathroom</option>
+  <option>2 Bathrooms</option>
+  <option>3 Bathrooms</option>
+  <option>4+ Bathrooms</option>
+</select>
+
+<select name="cleaning_type" required>
+  <option value="">Cleaning Type</option>
+  <option>Standard Cleaning</option>
+  <option>Deep Cleaning</option>
+  <option>Move-In / Move-Out</option>
+</select>
+
+  <textarea name="extra_details" placeholder="Any additional details? (Optional)"></textarea>
 
   <input type="hidden" name="_subject" value="New Cleaning Inquiry">
 
