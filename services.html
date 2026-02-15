@@ -185,18 +185,97 @@ font-weight: 700;
 margin: 0;
 letter-spacing: -0.5px;
 }
+
+ .menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.1);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1100;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
  
 @media (max-width: 768px) {
 
   header {
     padding: 15px 20px;
   }
-
-  nav {
-    gap: 15px;
-    font-size: 14px;
+  .menu-toggle {
+    display: block;
+    z-index: 1300;
   }
 
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 38%;
+    max-width: 320px;
+    background: #f3ede0;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.08);
+    padding: 100px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 1200;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav a {
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(84,69,65,0.08);
+    width: 100%;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+
+  nav.active a {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  nav.active a:nth-child(2) { transition-delay: 0.05s; }
+  nav.active a:nth-child(3) { transition-delay: 0.1s; }
+  nav.active a:nth-child(4) { transition-delay: 0.15s; }
+  nav.active a:nth-child(5) { transition-delay: 0.2s; }
+
+  .close-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 26px;
+    cursor: pointer;
+  }
   .page-hero {
     padding: 80px 20px;
   }
@@ -234,11 +313,17 @@ letter-spacing: -0.5px;
 </head>
 <body>
 <header>
+  <div class="overlay" onclick="toggleMenu()"></div>
+
   <a href="index.html">
     <img src="palemo-logo.png" class="logo">
   </a>
 
-  <nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="mobileNav">
+    <div class="close-menu" onclick="toggleMenu()">×</div>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
@@ -347,6 +432,12 @@ letter-spacing: -0.5px;
 </div>
   </div>
 </footer>
-
+<script>
+function toggleMenu() {
+  document.querySelector("nav").classList.toggle("active");
+  document.querySelector(".overlay").classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
+}
+</script>
 </body>
 </html>
