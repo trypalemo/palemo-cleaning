@@ -927,6 +927,13 @@ display: inline-block;
   border: 0;
 }
 
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
 /* =========================
 CONTACT MOBILE
 ========================= */
