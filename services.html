@@ -39,9 +39,10 @@
     "name": "Abuja"
   },
   "sameAs": [
-    "https://www.instagram.com/trypalemo",
-    "https://www.linkedin.com/company/trypalemo"
-  ],
+  "https://www.instagram.com/trypalemo",
+  "https://www.linkedin.com/company/trypalemo",
+  "https://www.x.com/trypalemo"
+],
   "serviceOffered": [
     {
       "@type": "Service",
@@ -91,13 +92,23 @@ document.addEventListener("click", function(e) {
   <div class="overlay" onclick="toggleMenu()"></div>
 
   <a href="index.html">
-    <img src="palemo-logo.png" class="logo">
+    <img 
+  src="palemo-logo.png"
+  class="logo"
+  alt="Palemo Cleaning Services logo"
+  width="60"
+  height="60">
   </a>
 
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
   <nav id="mobileNav">
-    <div class="close-menu" onclick="toggleMenu()">×</div>
+    <button 
+  class="close-menu" 
+  onclick="toggleMenu()" 
+  aria-label="Close menu">
+  ×
+</button>
 
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -119,7 +130,7 @@ document.addEventListener("click", function(e) {
 <div class="container">  
 <div class="service-detail">
 <img 
-  src="residential.jpg" 
+  src="residential.webp" 
   alt="Residential cleaning service in Abuja living room and kitchen" 
   loading="lazy"
   width="1200"
@@ -136,7 +147,7 @@ document.addEventListener("click", function(e) {
 </div>
 <div class="service-detail">
 <img 
-  src="deep.jpg" 
+  src="deep.webp" 
   alt="Deep cleaning service in Abuja kitchen and bathroom sanitization" 
   loading="lazy"
   width="1200"
@@ -152,7 +163,7 @@ document.addEventListener("click", function(e) {
 </div>
 <div class="service-detail">
 <img 
-  src="office.jpg" 
+  src="office.webp" 
   alt="Professional office cleaning service in Abuja workspace" 
   loading="lazy"
   width="1200"
@@ -168,7 +179,7 @@ document.addEventListener("click", function(e) {
 </div>
 <div class="service-detail">
 <img 
-  src="move.jpg" 
+  src="move.webp" 
   alt="Move in move out cleaning service in Abuja empty apartment" 
   loading="lazy"
   width="1200"
@@ -222,23 +233,41 @@ document.addEventListener("click", function(e) {
     <p>+234 707 406 7851</p>
 
     <div class="social-icons">
-      <img 
-  src="instagram.png" 
-  alt="" 
-  width="22" 
-  height="22">
-      <img 
-  src="x.png" 
-  alt="" 
-  width="22" 
-  height="22">
-      <img 
-  src="linkedin.png" 
-  alt="" 
-  width="22" 
-  height="22">
-    </div>
-  </div>
+
+  <a href="https://www.instagram.com/trypalemo"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Palemo on Instagram">
+    <img 
+      src="instagram.png"
+      alt="Instagram icon"
+      width="22"
+      height="22">
+  </a>
+
+  <a href="https://www.x.com/trypalemo"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Palemo on X">
+    <img 
+      src="x.png"
+      alt="X icon"
+      width="22"
+      height="22">
+  </a>
+
+  <a href="https://www.linkedin.com/company/trypalemo"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Palemo on LinkedIn">
+    <img 
+      src="linkedin.png"
+      alt="LinkedIn icon"
+      width="22"
+      height="22">
+  </a>
+
+</div>
 
 </div>
 
