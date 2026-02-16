@@ -743,6 +743,14 @@ margin-bottom: 10px;
   margin: 0 auto 60px auto;
 }
 
+.step-content h3 {
+  display: inline-block;
+}
+
+.step-content {
+  text-align: center;
+}
+
 /* =========================
 ABOUT MOBILE
 ========================= */
