@@ -97,7 +97,9 @@ document.addEventListener("click", function(e) {
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
   <nav id="mobileNav">
-    <div class="close-menu" onclick="toggleMenu()">×</div>
+    <button class="close-menu" onclick="toggleMenu()" aria-label="Close menu">
+  ×
+</button>
 
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
