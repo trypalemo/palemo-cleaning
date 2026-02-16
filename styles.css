@@ -524,6 +524,18 @@ font-size: 32px;
 line-height: 1.6;
 }
 
+.process-steps {
+margin-top: 40px;
+}
+
+.process-step {
+margin-bottom: 30px;
+}
+
+.process-step h3 {
+margin-bottom: 10px;
+}
+
 /* =========================
 SERVICES MOBILE
 ========================= */
