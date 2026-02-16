@@ -707,6 +707,10 @@ margin-bottom: 10px;
   font-size: 13px;
 }
 
+.process-title,
+.process-intro {
+  text-align: left;
+}
 
 
 /* =========================
