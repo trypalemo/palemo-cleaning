@@ -332,6 +332,20 @@ object-fit: cover;
 
   gtag('config', 'G-NX94W1KG8J');
 </script>
+
+ <script>
+document.addEventListener("click", function(e) {
+  const target = e.target.closest("[data-cta]");
+  if (!target) return;
+
+  const ctaType = target.getAttribute("data-cta");
+
+  gtag("event", "cta_click", {
+    cta_type: ctaType,
+    page_location: window.location.pathname
+  });
+});
+</script>
  
 </head>
 <body>
