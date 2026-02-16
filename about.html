@@ -421,15 +421,12 @@ font-weight: 600;
 
   <script>
 document.addEventListener("click", function(e) {
-  const target = e.target.closest("[data-cta]");
-  if (!target) return;
-
-  const ctaType = target.getAttribute("data-cta");
-
-  gtag("event", "cta_click", {
-    cta_type: ctaType,
-    page_location: window.location.pathname
-  });
+  var button = e.target.closest("[data-cta]");
+  if (button) {
+    gtag("event", "cta_click", {
+      cta_location: button.getAttribute("data-cta")
+    });
+  }
 });
 </script>
 </head>
