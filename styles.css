@@ -289,12 +289,13 @@ opacity: 0.9;
 }
 
 .footer-bottom {
-text-align: center;
-border-top: 1px solid rgba(255,255,255,0.15);
-margin-top: 50px;
-padding-top: 20px;
-font-size: 14px;
-color: #ccc;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+  width: 100%;
 }
 
 .social-links {
