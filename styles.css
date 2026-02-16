@@ -680,7 +680,32 @@ margin-bottom: 10px;
   margin-bottom: 10px;
 }
 
+.process-timeline {
+  position: relative;
+  padding-left: 50px;
+  border-left: 2px solid #ddd;
+}
 
+.process-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.process-number {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: #544541;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+}
 
 
 
