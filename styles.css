@@ -555,6 +555,10 @@ margin: 0 auto;
 line-height: 1.6;
 }
 
+.section {
+padding: 80px 20px;
+}
+
 .about-list {
 margin-top: 30px;
 padding-left: 20px;
