@@ -144,11 +144,11 @@ Explore our <a href="services.html" class="internal-link">cleaning services in A
 <label for="name" class="visually-hidden">Full Name</label>
 <input type="text" id="name" name="name" placeholder="Full Name" required>
 
-<label for="email">Email Address</label>
-<input type="email" id="email" name="email" required>
+<label for="email" class="visually-hidden">Email Address</label>
+<input type="email" id="email" name="email" placeholder="Email Address" required>
 
-<label for="phone">Phone Number</label>
-<input type="tel" id="phone" name="phone" required>
+<label for="phone" class="visually-hidden">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
 
 <label for="service">Service Type</label>
 <select id="service" name="service" required>
@@ -159,11 +159,12 @@ Explore our <a href="services.html" class="internal-link">cleaning services in A
   <option>Move-In / Move-Out</option>
 </select>
 
-<label for="preferred_date">Preferred Cleaning Date</label>
+<label for="preferred_date" class="visually-hidden">Preferred Cleaning Date</label>
 <input
   type="text"
   id="preferred_date"
   name="preferred_date"
+  placeholder="Preferred Cleaning Date"
   onfocus="this.type='date'"
   onblur="if(!this.value)this.type='text'"
 >
@@ -197,8 +198,8 @@ Explore our <a href="services.html" class="internal-link">cleaning services in A
   <option>4+ Bathrooms</option>
 </select>
 
-<label for="extra_details">Additional Details</label>
-<textarea id="extra_details" name="extra_details"></textarea>
+<label for="extra_details" class="visually-hidden">Additional Details</label>
+<textarea id="extra_details" name="extra_details" placeholder="Additional Details"></textarea>
 
   <input type="hidden" name="_subject" value="New Cleaning Inquiry">
 
